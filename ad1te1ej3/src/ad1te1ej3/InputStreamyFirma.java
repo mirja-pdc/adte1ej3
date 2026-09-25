@@ -7,7 +7,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
-
 // Basado en la solución al Ejercicio 1 de la Tarea de Aprendizaje 3
 public class InputStreamyFirma {
  
