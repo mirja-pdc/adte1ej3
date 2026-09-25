@@ -13,8 +13,18 @@ public class InputStreamyFirma {
  
     public static void main(String[] args) {
     	
-    	// La ruta con la que se crea el objeto File es el primer argumento del main
+    	// La ruta con la que se crea el objeto File es el primer argumento del main, args[0]
+    	// Añado rutas a los ficheros a probar de la carpeta firmas, que dejo comentadas para hacer pruebas:
+    	    
+    	// String rutaFichero = "." + File.separator + "firmas" + File.separator + "archivo_corto.bin"; // Prueba con archivo corto (<4 bytes)
+    	// String rutaFichero = "." + File.separator + "firmas" + File.separator + "archivo_texto.txt"; // Prueba con archivo de texto
+    	// String rutaFichero = "." + File.separator + "firmas" + File.separator + "extension_zip_falsa.zip"; // Prueba con fichero no ZIP con extensión .zip
+    	// String rutaFichero = "." + File.separator + "firmas" + File.separator + "zip_real_sin_extension.bin"; // Prueba con fichero ZIP sin extensión .zip
+    	// String rutaFichero = "." + File.separator + "firmas" + File.separator + "zip_real_valido.zip";  // Prueba con fichero ZIP válido
+    	
+        // Para la entrega final uso String rutaFichero = args[0], que tenía comentada para hacer las pruebas:
     	String rutaFichero = args[0];
+    	
     	File fichero = new File(rutaFichero);
  
     	// CON AYUDA DE GEMINI: Firma esperada para un fichero ZIP según el enunciado (80, 75, 3, 4)
